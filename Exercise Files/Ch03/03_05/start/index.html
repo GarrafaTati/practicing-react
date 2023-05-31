@@ -2,14 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <script
-      src="https://unpkg.com/react@17/umd/react.development.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
-      crossorigin
-    ></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <title>React ⚛️</title>
   </head>
@@ -24,9 +18,11 @@
           </header>
         );
       }
+
       function Main(props) {
         return (
           <section>
+            <img height={500} alt="Table in a fancy restaurant" src="./img/table.jpeg" />
             <ul>
               {props.dishes.map((dish) => (
                 <li key={dish.id}>

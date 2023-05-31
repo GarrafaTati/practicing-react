@@ -2,14 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <script
-      src="https://unpkg.com/react@17/umd/react.development.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
-      crossorigin
-    ></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <title>React ⚛️</title>
   </head>
@@ -24,6 +18,7 @@
           </header>
         );
       }
+
       function Main(props) {
         return (
           <section>
@@ -66,7 +61,7 @@
 
       function App() {
         return (
-          <div>
+          <React.Fragment>
             <Header name="Cindy" />
             <Main
               adjective="amazing"
@@ -75,7 +70,7 @@
             <Footer
               year={new Date().getFullYear()}
             />
-          </div>
+          </React.Fragment>
         );
       }
 
