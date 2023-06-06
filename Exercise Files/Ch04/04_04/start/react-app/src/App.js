@@ -1,18 +1,18 @@
 import "./App.css";
+import { useState } from "react";
 
-const [firstCity, second] = [
-  "Tokyo",
-  "Tahoe City",
-  "Bend"
-];
 
-console.log(firstCity);
-console.log(second);
+function App() {
+  const [emotion, setEmotion] = useState("happy");//initial value... when it is rendered for the fist time
+  //emotion is our state variable
+  //setEmotion is a function that we use to change our state
 
-function App({ library }) {
   return (
     <div className="App">
-      <h1>Hello from {library}</h1>
+      <h1>Current emotion is {emotion}</h1>
+      <button onClick={() => setEmotion("sad")}>Sad</button>
+      <button onClick={() => setEmotion("excited")}>Excited</button>
+      <button onClick={() => setEmotion("happy")}>Happy</button>
     </div>
   );
 }
