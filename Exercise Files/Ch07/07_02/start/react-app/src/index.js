@@ -11,7 +11,6 @@ ReactDOM.render(
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
-    <App />
   </BrowserRouter>,
   document.getElementById("root")
 );
